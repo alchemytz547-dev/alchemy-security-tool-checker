@@ -27,4 +27,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run Security Tool Checker
-        run: python AlchemySecurityToolChecker.py
+         run: xvfb-run -a python AlchemySecurityToolChecker.py
